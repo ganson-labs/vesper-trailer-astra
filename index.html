@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050708">
+  <title>VESPER — Последний свет</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js","three/addons/":"./node_modules/three/examples/jsm/"}}</script>
+</head>
+<body>
+  <main id="cinema">
+    <div id="viewport"></div>
+    <div id="shade"></div>
+    <div id="flash"></div>
+    <div id="opening"><span class="hairline"></span><span>A WORLD BEYOND THE LAST SUN</span><span class="hairline"></span></div>
+    <div id="caption"><span id="caption-kicker"></span><p id="caption-text"></p></div>
+    <div id="title"><div class="sigil"><i></i><b></b></div><p class="eyebrow">THE LAST LIGHT</p><h1>VESPER</h1><p class="subtitle">ПОСЛЕДНИЙ СВЕТ</p><div class="rule"></div><p class="promise">УКРАДИ РАССВЕТ У БОГОВ.</p><p class="soon">ОДНА ИСКРА. ЦЕЛЫЙ МИР.</p></div>
+    <div id="curtain"></div>
+  </main>
+  <div id="boot"><div class="boot-orbit"></div><h2>VESPER</h2><p id="boot-status">Пробуждение мира…</p><button id="start" hidden>НАЧАТЬ ПУТЕШЕСТВИЕ</button></div>
+  <div id="controls"><button id="replay" title="Начать заново (R)">↺</button><button id="pause" title="Пауза (пробел)">Ⅱ</button><button id="mute" title="Звук (M)">ЗВУК ВКЛ</button><button id="fullscreen" title="Полный экран (F)">⛶</button><span id="clock">00:00 / 01:04</span></div>
+  <div id="progress"><i></i></div>
+  <div id="end"><button id="again">ПЕРЕЖИТЬ СНОВА <span>↺</span></button></div>
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>

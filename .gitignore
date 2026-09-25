@@ -1,0 +1,4 @@
+node_modules/
+.runtime/
+qa/
+.playwright-mcp/
